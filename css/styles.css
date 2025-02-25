@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+div#wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 20px;
+}
+
+div#meContainer {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+img#me {
+    width: 100%;
+}
+
+ul#links{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+a#link:link {
+    width: 200px;
+    background-color: white;
+}
+
+button#link {
+    width: 200px;
+    height: 40px;
+}
