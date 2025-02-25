@@ -1,12 +1,20 @@
+@font-face {
+    font-family: GeistMono;
+    src: url(../assets/fonts/GeistMono-VariableFont_wght.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
     border: 0;
     text-decoration: none;
+    font-family: GeistMono, monospace;
+    color: white;
 }
 
 body {
-    background-color: white;
+    background-color: black;
+    background-image: linear-gradient(to bottom right,darkred, black);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,20 +25,44 @@ div#wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    width: 95vw;
-    height: 95vh;
+    width: 80vw;
+    height: 80vh;
     gap: 20px;
     background-color: black;
-    border: 4px solid red;
     border-radius: 15px;
+    overflow: hidden;
+    border: 4px solid #777777;
 }
 
+
 div#meContainer {
-    width: 200px;
-    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+div#meFrame {
+    aspect-ratio : 1 / 1;
+    width: 90%;
     border-radius: 50%;
     overflow: hidden;
+}
+
+div#infoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    gap: 50px;
+}
+
+h1 {
+    color: white;
+    font-size: 3vw;
 }
 
 img#me {
@@ -75,4 +107,36 @@ embed.pdf {
 img.icon {
     height: 80%;
     filter: invert();
+}
+
+@media (width < 700px){
+    body{
+        height: min(900px);
+    }
+    div#wrapper {
+        flex-direction: column;
+        width: 90vw;
+        height: auto;
+    }
+
+    div#meContainer {
+        width: 100%;
+        height: 300px;
+    }
+
+    div#meFrame {
+        width: 60%;
+    }
+
+    div#infoContainer {
+        width: 100%;
+        gap: 20px;
+        height: 50vh;
+        justify-content: flex-start;
+    }
+
+    h1 {
+        font-size: 7vw;
+    }
+
 }
