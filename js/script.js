@@ -11,5 +11,9 @@ links.forEach(link => {
         {
             window.location.href = "https://www.linkedin.com/in/orss01";
         }
+        else if(name == "resume")
+        {
+            window.location.href = "https://orss01.dev/assets/pdf/resume.pdf";
+        }
     });
 });
