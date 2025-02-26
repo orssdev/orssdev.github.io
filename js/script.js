@@ -13,7 +13,7 @@ links.forEach(link => {
         }
         else if(name.includes("resume"))
         {
-            window.location.href = "https://orssdev.dev/assets/pdf/resume.pdf";
+            window.location.href = "https://orss.dev/assets/pdf/resume.pdf";
         }
     });
 });
