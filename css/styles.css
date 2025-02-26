@@ -110,9 +110,6 @@ img.icon {
 }
 
 @media (width < 700px){
-    body{
-        height: min(900px);
-    }
     div#wrapper {
         flex-direction: column;
         width: 90vw;
@@ -136,7 +133,7 @@ img.icon {
     }
 
     h1 {
-        font-size: 7vw;
+        font-size: 6.5vw;
     }
 
 }
