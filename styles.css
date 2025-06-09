@@ -1,0 +1,57 @@
+:root {
+    --primary-color: #000000;
+    --secondary-color: #333333;
+    --text-color: #ffffff;
+    --profile-image-size: 200px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-align: none;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: "Jersey 15", sans-serif;
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#profile-image-container {
+    width: var(--profile-image-size);
+    height: var(--profile-image-size);
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+#profile-image {
+    width: 100%
+}
+
+#profile-heading {
+    font-size: 2em;
+    color: var(--text-color);
+    text-align: center;
+}
+
+#profile-link-container {
+    display: flex;
+    align-items: center;
+}
+
+#profile-links {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 2em;
+}
+
